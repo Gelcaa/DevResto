@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/text_view_restaurant_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif-light"
+        android:text="Dev Resto"
+        android:textColor="@color/black"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/text_view_email_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_view_restaurant_name"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif-black"
+        android:text="DevResto@angelicabuan.com"
+        android:textSize="12dp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_starters"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_view_email_address"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/starter" />
+
+            <TextView
+                android:id="@+id/text_view_starters"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="sans-serif-black"
+                android:text="Starters"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_main"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/card_view_starters"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/main_course" />
+
+            <TextView
+                android:id="@+id/text_view_main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="sans-serif-black"
+                android:text="Main"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_desserts"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/card_view_main"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/desserts" />
+
+            <TextView
+                android:id="@+id/text_view_desserts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="sans-serif-black"
+                android:text="Desserts"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
